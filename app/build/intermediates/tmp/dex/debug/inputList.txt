@@ -1,0 +1,8 @@
+F:\astuduoWorkspace\SAP\app\build\intermediates\classes\debug
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-9416bcdc03eb5245c2915758fe19a47de2f66e96.jar
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\classes-99064f458b1b1331ff67ea62a86592e608ef0a92.jar
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\classes-71a0a6795f813ca2202dafe55f1bfef0ee8db5c2.jar
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-cd124cd3c43d5ff7b81a3ed3760d72f8ffac3939.jar
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\classes-c31e9833834f37684ce36edfd0b15fb14b304d89.jar
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\classes-1c0e5bea59e5ac2274ae1cfb55e345c002fbe01a.jar
+F:\astuduoWorkspace\SAP\app\build\intermediates\pre-dexed\debug\classes-3a104606e923ec40a401ef932c98b92fdc0c8ed8.jar

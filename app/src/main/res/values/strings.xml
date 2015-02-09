@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">САП</string>
+    <string name="buttoin">Войти</string>
+    <string name="action_send">Отправить</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_update"></string>
+    <string name="title_section1">Профиль</string>
+    <string name="title_section2">Истории</string>
+    <string name="disc">Много текста</string>
+    <string name="logi">Логин</string>
+    <string name="passw">Пароль</string>
+    <string name="aboutcomp">О компании</string>
+    <string name="aboutapp">О приложении</string>
+    <string name="rega">Регистрация</string>
+    <string name="ask_login">Введите логин</string>
+    <string name="login_err">Такой логин \n уже существует</string>
+    <string name="ask_tel">Введите пароль</string>
+    <string name="re_ask_tel">Подтвердите пароль</string>
+    <string name="ask_key">Введите секретный ключ</string>
+    <string name="registration_button">Зарегистрироваться</string>
+    <string name="pass_alert">Используйте только \n латинские буквы и цифры</string>
+    <string name="short_pass_alert">Пароль слишком \n короткий</string>
+    <string name="accept_pass_alert">Пароль неверен</string>
+    <string name="secret_key_alert">Секретного ключа \n не существует</string>
+    <string-array name="menu_options">
+        <item>Отправить историю</item>
+        <item>Мои комментарии</item>
+        <item>Мой профиль</item>
+        <item>Психолог</item>
+        <item>Юрист</item>
+        <item>О нас</item>
+    </string-array>
+    <string-array name="drawer_items">
+        <item>Анонимные истории</item>
+        <item>Консультация психолога</item>
+        <item>Консультация юриста</item>
+    </string-array>
+    <string-array name="histories">
+        <item>asdasd</item>
+    </string-array>
+
+    <string name="url_get_histories">http://dustj.esy.es/selDB/get_all_histories.php</string>
+    <string name="url_reg_user">http://dustj.esy.es/selDB/user_registr.php</string>
+    <string name="url_usr_loginn">http://dustj.esy.es/selDB/user_login.php</string>
+    <string name="url_get_message">http://dustj.esy.es/selDB/get_message.php</string>
+    <string name="url_add_message">http://dustj.esy.es/selDB/add_message.php</string>
+    <string name="url_get_psych_list">http://dustj.esy.es/selDB/get_psych_data.php</string>
+    <string name="url_add_history">http://dustj.esy.es/selDB/add_history.php</string>
+    <string name="regaedithintforpassword">Пароль</string>
+    <string name="regaedithintlogin">Логин</string>
+    <string name="commentsButtonString">Комментарии</string>
+    <string name="title_activity_comments">Комментарии</string>
+    <string name="action_settings">Settings</string>
+    <string name="fill_fields">Заполните все поля</string>
+    <string name="loading_text">Загружаем...</string>
+    <string name="invalid_entity">Логин или пароль неверен</string>
+    <string name="login_or_pass_exist_message">Логин или пароль уже существует</string>
+
+    //Цвета приложения
+    <color name="theme_color">#00BCD4</color>
+    <color name="darker_color">#0097A7</color>
+    <color name="lighter_color">#B2EBF2</color>
+    <color name="accent_color_400">#FF3D00</color>
+    <color name="accent_color_200">#FF6E40</color>
+    <color name="accent_color_100">#FF9E80</color>
+    <color name="Green">#69F0AE</color>
+    <color name="Yellow">#EEFF41</color>
+    <color name="Red">#F44336</color>
+    <color name="White">#FFFFFF</color>
+
+
+    <string name="mainhist_title">Истории</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <color name="rega_text_color">#00BCD4</color>
+    <color name="rega_textview_text_color">#00BCD4</color>
+
+    <string name="title_activity_yurist">Yurist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Профиль</string>
+    <string name="title_activity_histories">Анонимные истории</string>
+    <string name="title_activity_yurists">Услуги юриста</string>
+    <string name="title_activity_psih">Услуги психолога</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_send_hist">Отправить историю</string>
+    <string name="title_activity_regisrtation">Регистрация</string>
+    <string name="title_activity_messages">Сообщения</string>
+
+</resources>

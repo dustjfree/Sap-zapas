@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dustjfree.sap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Rega.NoTitleBar" >
+        <activity
+            android:name="com.dustjfree.sap.Rega"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.Histories"
+            android:label="@string/title_activity_histories" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.YuristsAct"
+            android:label="@string/title_activity_yurists" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.PsihAct"
+            android:label="@string/title_activity_psih" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.SendHist"
+            android:label="@string/title_activity_send_hist" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.Comments"
+            android:label="@string/title_activity_comments" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.RegisrtationActivity"
+            android:label="@string/title_activity_regisrtation" >
+        </activity>
+        <activity
+            android:name="com.dustjfree.sap.Messages"
+            android:label="@string/title_activity_messages" >
+        </activity>
+    </application>
+
+</manifest>

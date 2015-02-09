@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rega" >
+
+    <Button
+        android:id="@+id/buttonRega"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="Gothic"
+        android:gravity="center"
+        android:text="@string/buttoin"
+        android:textColor="@color/White"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/text_button_O_o_reg"
+        android:layout_alignLeft="@+id/rPassInput"
+        android:layout_alignStart="@+id/rPassInput"
+        android:layout_alignRight="@+id/rPassInput"
+        android:layout_alignEnd="@+id/rPassInput"
+        style="@style/reg_button_new"/>
+
+    <TextView
+        android:id="@+id/text_button_O_o_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="Gothic"
+        android:text="@string/rega"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/rega_text_color"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/rLoginInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableBottom="@drawable/edit_text_line_new"
+        android:ems="10"
+        android:fontFamily="Gothic"
+        android:hint="@string/regaedithintlogin"
+        android:inputType="text"
+        android:textColor="@color/rega_textview_text_color"
+        android:textColorHint="@color/rega_textview_text_color"
+        android:layout_above="@+id/rPassInput"
+        android:layout_marginBottom="15dp"
+        android:layout_alignLeft="@+id/imageView1"
+
+        android:layout_alignRight="@+id/imageView1" />
+
+    <EditText
+        android:id="@+id/rPassInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableBottom="@drawable/edit_text_line_new"
+        android:ems="10"
+        android:fontFamily="Gothic"
+        android:hint="@string/regaedithintforpassword"
+        android:inputType="text"
+        android:textColor="@color/rega_textview_text_color"
+        android:textColorHint="@color/rega_textview_text_color"
+        android:password="true"
+        android:layout_above="@+id/buttonRega"
+        android:layout_marginBottom="50dp"
+        android:layout_alignRight="@+id/rLoginInput"
+        android:layout_alignLeft="@+id/rLoginInput"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/logo_new"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignLeft="@+id/buttonRega"
+        android:layout_alignRight="@+id/buttonRega"
+        android:background="#00000000"
+        android:onClick="butt_registr"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/buttonRega" />
+
+</RelativeLayout>
