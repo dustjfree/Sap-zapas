@@ -126,7 +126,9 @@ public class Histories extends ActionBarActivity {
                 }
             }
         });
-
+/*
+*COOOOMMMMMEEEEENT
+ */
         fabButton = new FloatingActionButton.Builder(this)
                 .withDrawable(getResources().getDrawable(R.drawable.fab_send_hist_white__24dp))
                 .withButtonColor(getResources().getColor(R.color.accent_color_400))
