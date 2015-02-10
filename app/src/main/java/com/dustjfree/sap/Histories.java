@@ -189,8 +189,11 @@ public class Histories extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
-        if(toggle.onOptionsItemSelected(item))
+        if(toggle.onOptionsItemSelected(item)){
+
             return true;
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
