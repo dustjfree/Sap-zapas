@@ -1873,13 +1873,15 @@ containing a value of this type.
         public static final int title_activity_yurists=0x7f0b003a;
         public static final int title_section1=0x7f0b003b;
         public static final int title_section2=0x7f0b003c;
-        public static final int url_add_history=0x7f0b003d;
-        public static final int url_add_message=0x7f0b003e;
-        public static final int url_get_histories=0x7f0b003f;
-        public static final int url_get_message=0x7f0b0040;
-        public static final int url_get_psych_list=0x7f0b0041;
-        public static final int url_reg_user=0x7f0b0042;
-        public static final int url_usr_loginn=0x7f0b0043;
+        public static final int url_add_comment=0x7f0b003d;
+        public static final int url_add_history=0x7f0b003e;
+        public static final int url_add_message=0x7f0b003f;
+        public static final int url_get_comments=0x7f0b0040;
+        public static final int url_get_histories=0x7f0b0041;
+        public static final int url_get_message=0x7f0b0042;
+        public static final int url_get_psych_list=0x7f0b0043;
+        public static final int url_reg_user=0x7f0b0044;
+        public static final int url_usr_loginn=0x7f0b0045;
     }
     public static final class style {
         public static final int Actionbar=0x7f0c0000;
