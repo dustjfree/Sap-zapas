@@ -41,13 +41,15 @@
         <item>asdasd</item>
     </string-array>
 
-    <string name="url_get_histories">http://dustj.esy.es/selDB/get_all_histories.php</string>
-    <string name="url_reg_user">http://dustj.esy.es/selDB/user_registr.php</string>
-    <string name="url_usr_loginn">http://dustj.esy.es/selDB/user_login.php</string>
-    <string name="url_get_message">http://dustj.esy.es/selDB/get_message.php</string>
-    <string name="url_add_message">http://dustj.esy.es/selDB/add_message.php</string>
-    <string name="url_get_psych_list">http://dustj.esy.es/selDB/get_psych_data.php</string>
-    <string name="url_add_history">http://dustj.esy.es/selDB/add_history.php</string>
+    <string name="url_get_histories">http://stsap.ru/selDB/get_all_histories.php</string>
+    <string name="url_reg_user">http://stsap.ru/selDB/user_registr.php</string>
+    <string name="url_usr_loginn">http://stsap.ru/selDB/user_login.php</string>
+    <string name="url_get_message">http://stsap.ru/selDB/get_message.php</string>
+    <string name="url_add_message">http://stsap.ru/selDB/add_message.php</string>
+    <string name="url_get_psych_list">http://stsap.ru/selDB/get_psych_data.php</string>
+    <string name="url_add_history">http://stsap.ru/selDB/add_history.php</string>
+    <string name="url_add_comment">http://stsap.ru/selDB/add_comment.php</string>
+    <string name="url_get_comments">http://stsap.ru/selDB/get_history_comments.php</string>
     <string name="regaedithintforpassword">Пароль</string>
     <string name="regaedithintlogin">Логин</string>
     <string name="commentsButtonString">Комментарии</string>

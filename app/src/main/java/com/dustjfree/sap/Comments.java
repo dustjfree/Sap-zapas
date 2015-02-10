@@ -37,7 +37,7 @@ import android.widget.Toast;
 public class Comments extends ActionBarActivity {
 
 	private static String url_add_comment = "http://dustj.esy.es/selDB/add_comment.php";
-	private static String url_get_comment = "http://dustj.esy.es/selDB/get_history_comments.php";
+	private static String url_get_comment = "http://stsap.ru/selDB/get_history_comments.php";
 	JSONparser mjsp = new JSONparser();
 	ArrayList<HashMap<String, String>> commentList;
 	JSONparser jParser = new JSONparser();
@@ -110,7 +110,7 @@ public class Comments extends ActionBarActivity {
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			// getting JSON string from URL
 			params.add(new BasicNameValuePair("idstr", idstr));
-			JSONObject json = jParser.makeHttpRequest(url_get_comment, "GET", params);
+			JSONObject json = jParser.makeHttpRequest(getString(R.string.url_get_comments), "GET", params);
 			
 			// Check your log cat for JSON reponse
 			Log.d("All Comments ", json.toString());
@@ -186,7 +186,7 @@ public class Comments extends ActionBarActivity {
 			params.add(new BasicNameValuePair("comment", etxt));
 			params.add(new BasicNameValuePair("keyToHist", idstr));
             params.add(new BasicNameValuePair("userid",userID));
-			JSONObject json = mjsp.makeHttpRequest(url_add_comment,"POST", params);
+			JSONObject json = mjsp.makeHttpRequest(getString(R.string.url_add_comment),"POST", params);
 			Log.d("Create Response", json.toString());
 			try {
 				int success = json.getInt(TAG_SUCCESS);
