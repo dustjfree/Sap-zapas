@@ -11,6 +11,7 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -34,11 +35,15 @@ public class RegisrtationActivity extends ActionBarActivity{
     String login, pass, rePass, secretKey;
     TextView alertLogin, alertPass, alertRePass, alertSecretKey;
 	int proof;
+    SharedPreferences sharePrefs;
 	private static final String TAG_SUCCESS = "success";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_regisrtation);
+
+        sharePrefs = getSharedPreferences("yourID", this.MODE_PRIVATE);
+
         toolbar = (Toolbar)findViewById(R.id.RegToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -94,11 +99,10 @@ public class RegisrtationActivity extends ActionBarActivity{
 	    }
 
 		protected String doInBackground(String... args) {
-			String usrLogin = edLogin.getText().toString();
-			String usrTel = edPass.getText().toString();
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
-			params.add(new BasicNameValuePair("user_login", usrLogin));
-			params.add(new BasicNameValuePair("user_pass", usrTel));
+			params.add(new BasicNameValuePair("user_login", login));
+			params.add(new BasicNameValuePair("user_pass", pass));
+            params.add(new BasicNameValuePair("school_key", secretKey));
 			JSONObject json = jParser.makeHttpRequest(getString(R.string.url_reg_user),"POST", params);
 			Log.d("Create Response", json.toString());
 			try {
@@ -121,6 +125,9 @@ public class RegisrtationActivity extends ActionBarActivity{
 
 				alertLogin.setVisibility(View.VISIBLE);
 			}
+            SharedPreferences.Editor ed = sharePrefs.edit();
+            ed.putString("school_key", secretKey);
+            ed.apply();
 		}
 	}
 }

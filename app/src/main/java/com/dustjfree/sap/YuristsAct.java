@@ -23,14 +23,16 @@ public class YuristsAct extends ActionBarActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		String[] web = {
-			    "ФЫЫ",
-				"ВАП",
-				"ПРО"
+			    "Филиппов Юрий Павлович",
+				"Корнилов Дмитрий Александрович",
+				"Сенин Денис Святославович",
+                "Прохорова Анна Александровна"
 				} ;
 		Integer[] imageId = {
-			      R.drawable.lawer_ivanov,
-			      R.drawable.lawer_kirilov,
-			      R.drawable.lawer_prohorova
+			      R.drawable.lawer_filippov,
+			      R.drawable.lawer_kornilov,
+			      R.drawable.lawer_senin,
+                R.drawable.lawer_prohorova
 			  };
 		
 		YuristA sad = new YuristA(this, web, imageId);

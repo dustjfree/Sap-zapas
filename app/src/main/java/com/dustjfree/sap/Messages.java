@@ -167,7 +167,7 @@ public class Messages extends ActionBarActivity{
 				mes_lv.setAdapter(adapter);
 				
 			} else {
-				Toast.makeText(Messages.this, "��������� ��� ���", Toast.LENGTH_SHORT).show();
+//				Toast.makeText(Messages.this, "��������� ��� ���", Toast.LENGTH_SHORT).show();
 			}
 			}
 	}

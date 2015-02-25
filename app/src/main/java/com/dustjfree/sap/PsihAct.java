@@ -8,15 +8,18 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Debug;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -35,6 +38,8 @@ public class PsihAct extends ActionBarActivity {
 	ArrayList<HashMap<String, String>> PsychList;
 	JSONArray psych_name = null;
     Toolbar toolbar;
+    SharedPreferences sharePrefs;
+    String schoolkey = null;
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_PSYCH_DATA = "psych_name";
 	private static final String TAG_PSYCH_ID = "user_id";
@@ -43,6 +48,8 @@ public class PsihAct extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.psihol);
+        sharePrefs = getSharedPreferences("yourID", this.MODE_PRIVATE);
+        schoolkey = sharePrefs.getString("school_key",null);
         toolbar = (Toolbar)findViewById(R.id.psychToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -74,7 +81,9 @@ public class PsihAct extends ActionBarActivity {
 	      
 		@Override
 		protected String doInBackground(String... args) {
+            Log.d("schoolkeyPsihAct ", schoolkey);
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
+            params.add(new BasicNameValuePair("school_key",schoolkey ));
 			// getting JSON string from URL
 			JSONObject json = jParser.makeHttpRequest(getString(R.string.url_get_psych_list), "GET", params);
 			
