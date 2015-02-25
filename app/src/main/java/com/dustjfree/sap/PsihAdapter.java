@@ -26,6 +26,9 @@ public class PsihAdapter extends ArrayAdapter<HashMap<String,String>>{
 			image = _image;
 			}
 	@Override
+    //asdasdasd
+
+    //asdasd
 	public View getView(int position, View view, ViewGroup parent) {
 	LayoutInflater inflater = ((Activity) context).getLayoutInflater();
 	View rowView= inflater.inflate(R.layout.psihol_item, null, true);

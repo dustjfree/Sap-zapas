@@ -134,6 +134,7 @@ public class PsihAct extends ActionBarActivity {
 		
 	protected void onPostExecute(String file_url) {
 			pDialog.dismiss();
+        //asdasdasd
 			String[] from = {TAG_PSYCH_DATA};
 			int[] to = {R.id.txtPsih};
 			ListAdapter adapter = new SimpleAdapter(PsihAct.this, PsychList, R.layout.psihol_item, from,to);
