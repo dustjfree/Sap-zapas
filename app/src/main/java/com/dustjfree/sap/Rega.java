@@ -31,6 +31,7 @@ public class Rega extends Activity {
 	EditText passInput;
 	int proof;
 	String user_id;
+    String school_key;
     //String loadintText = getString(R.string.loading_text);
 	SharedPreferences sharedUserID;
 	@Override
@@ -88,6 +89,7 @@ public class Rega extends Activity {
 			Log.d("Create Response", json.toString());
 			try {
 				user_id = json.getString(TAG_USER_ID);
+                school_key = json.getString("school_key");
 				int success = json.getInt(TAG_SUCCESS);
 				switch(success){
 				case 1: proof = 1;
@@ -107,6 +109,7 @@ public class Rega extends Activity {
 			pDialog.dismiss();
 			Editor sedit = sharedUserID.edit();
 			sedit.putString(TAG_USER_ID, user_id);
+            sedit.putString("school_key", school_key);
 			sedit.apply();
 			switch(proof){
 			case 0: Toast.makeText(Rega.this, R.string.invalid_entity, Toast.LENGTH_SHORT).show();
