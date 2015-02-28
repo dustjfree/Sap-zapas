@@ -57,16 +57,16 @@ public class Comments extends ActionBarActivity {
     String userID;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.comments);
-		listView = (ListView) findViewById(R.id.lvComm);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.comments);
+        listView = (ListView) findViewById(R.id.lvComm);
 
-		editText = (EditText) findViewById(R.id.typeCommField);
-		id = getIntent().getIntExtra("idHist", 123);
-		idstr = String.valueOf(id);
+        editText = (EditText) findViewById(R.id.typeCommField);
+        id = getIntent().getIntExtra("idHist", 123);
+        idstr = String.valueOf(id);
 
 
-		toolbar = (Toolbar)findViewById(R.id.commToolbar);
+        toolbar = (Toolbar) findViewById(R.id.commToolbar);
         //Активирует тулбар,т.е. делает тулбар экшн баром
         setSupportActionBar(toolbar);
         //Показывает кнопку "назад"
@@ -74,21 +74,24 @@ public class Comments extends ActionBarActivity {
 
         commentList = new ArrayList<HashMap<String, String>>();
         sharedUserID = getSharedPreferences("yourID", this.MODE_PRIVATE);
-        userID = sharedUserID.getString("user_id",null);
-		new GetHistoryComments().execute();
-		Button buttComm = (Button)findViewById(R.id.sendComm);
-		buttComm.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-			
-				new CreateNewComment().execute();
-				editText.setText("");
-				recreate();
-			}
-		});
-	}
+        userID = sharedUserID.getString("user_id", null);
+        if (jParser.isOnline(this)) {
+            new GetHistoryComments().execute();
+        }
+        Button buttComm = (Button) findViewById(R.id.sendComm);
+        buttComm.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                if (jParser.isOnline(Comments.this)) {
+                    new CreateNewComment().execute();
+                    editText.setText("");
+                    recreate();
+                }
+            }
+        });
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){

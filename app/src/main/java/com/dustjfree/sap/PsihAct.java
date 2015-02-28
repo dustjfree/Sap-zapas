@@ -55,7 +55,8 @@ public class PsihAct extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		PsychList = new ArrayList<HashMap<String, String>>();
 		lv = (ListView)findViewById(R.id.lvPsih);
-		new LoadAllPsych().execute();
+        if(jParser.isOnline(this))
+		    new LoadAllPsych().execute();
 	}
 	
 	@Override

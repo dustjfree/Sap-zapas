@@ -50,7 +50,8 @@ public class Rega extends Activity {
 				// TODO Auto-generated method stub
 				if((loginInput.getText().length()>0) && (passInput.getText().length()>0)){
                     try{
-					new UserLogin().execute();
+                        if(jParser.isOnline(Rega.this))
+					        new UserLogin().execute();
                     } catch (Exception e) {
                         Log.d("dasd", "ERROR");
                     }

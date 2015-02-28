@@ -47,7 +47,7 @@ public class RegisrtationActivity extends ActionBarActivity{
         toolbar = (Toolbar)findViewById(R.id.RegToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        jParser.isOnline(this);
 		edLogin = (EditText) findViewById(R.id.edit_reg_login);
 		edPass = (EditText) findViewById(R.id.edit_reg_pass);
 		edRePass = (EditText)findViewById(R.id.edit_reg_pass_re);

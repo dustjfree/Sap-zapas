@@ -82,12 +82,18 @@ public class Histories extends ActionBarActivity {
 
 		historyList = new ArrayList<HashMap<String, String>>();
 		lv = (ListView)findViewById(R.id.listHist);
-		new LoadAllHistories().execute();
+        if(jParser.isOnline(this))
+		    new LoadAllHistories().execute();
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener(){
             @Override
             public void onRefresh() {
-                historyList.clear();
-                new LoadAllHistories().execute();
+
+                if(jParser.isOnline(Histories.this)){
+                    historyList.clear();
+                    new LoadAllHistories().execute();
+                }
+                else
+                    onRefreshComplete();
             }
         });
 
@@ -103,9 +109,9 @@ public class Histories extends ActionBarActivity {
                 R.drawable.lawyer_new
         };
         SettingAdapter sad = new SettingAdapter(Histories.this, web, imageId);
-        ListView lv = (ListView) findViewById(R.id.lv_navigation_drawer);
-        lv.setAdapter(sad);
-        lv.setOnItemClickListener(new OnItemClickListener() {
+        ListView lvMenu = (ListView) findViewById(R.id.lv_navigation_drawer);
+        lvMenu.setAdapter(sad);
+        lvMenu.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position,
@@ -170,6 +176,12 @@ public class Histories extends ActionBarActivity {
                     mLastScrollY = getTopItemScrollY();
                     mPreviousFirstVisibleItem = firstVisibleItem;
                 }
+            }
+        });
+        lv.setOnItemClickListener( new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
             }
         });
 	}

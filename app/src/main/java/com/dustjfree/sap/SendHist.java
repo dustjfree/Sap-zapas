@@ -52,7 +52,8 @@ public class SendHist extends ActionBarActivity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				new CreateNewHistory().execute();
+                if(mjsp.isOnline(SendHist.this))
+				    new CreateNewHistory().execute();
 
 			}
 		});

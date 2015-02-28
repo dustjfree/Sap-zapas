@@ -73,11 +73,13 @@ public class Messages extends ActionBarActivity{
 			yourid = asdPREF.getString("user_id", "");
 		}
 		proof = 0;
-		new LoadAllMessages().execute();
+        if(jParser.isOnline(this))
+		    new LoadAllMessages().execute();
 	}
 	
 	public void Send_message(View view){
-		new CreateNewMessage().execute();
+        if(jParser.isOnline(Messages.this))
+		    new CreateNewMessage().execute();
 		editText.setText("");
 		recreate();
 	}

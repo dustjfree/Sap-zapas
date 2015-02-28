@@ -20,7 +20,11 @@ import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
+import android.widget.Toast;
 
 public class JSONparser {
 	
@@ -32,7 +36,15 @@ public class JSONparser {
 	public JSONparser() {
 
 	}
-
+    public boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+            return true;
+        }
+        Toast.makeText(context, R.string.MS_InternetExc, Toast.LENGTH_SHORT).show();
+        return false;
+    }
 	// function get json from url
 	// by making HTTP POST or GET mehtod
 	public JSONObject makeHttpRequest(String url, String method,
@@ -40,7 +52,7 @@ public class JSONparser {
 
 		// Making HTTP request
 		try {
-			
+
 			// check for request method
 			if(method == "POST"){
 				// request method is POST
@@ -52,7 +64,7 @@ public class JSONparser {
 				HttpResponse httpResponse = httpClient.execute(httpPost);
 				HttpEntity httpEntity = httpResponse.getEntity();
 				is = httpEntity.getContent();
-				
+
 			}else if(method == "GET"){
 				// request method is GET
 				DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -63,8 +75,8 @@ public class JSONparser {
 				HttpResponse httpResponse = httpClient.execute(httpGet);
 				HttpEntity httpEntity = httpResponse.getEntity();
 				is = httpEntity.getContent();
-			}			
-			
+			}
+
 
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();

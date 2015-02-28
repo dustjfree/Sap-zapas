@@ -59,7 +59,7 @@
     <string name="loading_text">Загружаем...</string>
     <string name="invalid_entity">Логин или пароль неверен</string>
     <string name="login_or_pass_exist_message">Логин или пароль уже существует</string>
-
+    <string name="MS_InternetExc">Проверьте подключение к интернету и повторите поппытку</string>
     //Цвета приложения
     <color name="theme_color">#00BCD4</color>
     <color name="darker_color">#0097A7</color>
