@@ -1609,7 +1609,9 @@ containing a value of this type.
         public static final int settings_bottom=0x7f02005f;
         public static final int short_line=0x7f020060;
         public static final int short_line_new=0x7f020061;
-        public static final int up=0x7f020062;
+        public static final int speech_bubble_blue=0x7f020062;
+        public static final int speech_bubble_green=0x7f020063;
+        public static final int up=0x7f020064;
     }
     public static final class id {
         public static final int RegToolbar=0x7f090054;

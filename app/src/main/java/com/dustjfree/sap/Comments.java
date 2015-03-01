@@ -36,8 +36,7 @@ import android.widget.Toast;
 
 public class Comments extends ActionBarActivity {
 
-	private static String url_add_comment = "KAKAWKA";
-	private static String url_get_comment = "http://stsap.ru/selDB/get_history_comments.php";
+
 	JSONparser mjsp = new JSONparser();
 	ArrayList<HashMap<String, String>> commentList;
 	JSONparser jParser = new JSONparser();
