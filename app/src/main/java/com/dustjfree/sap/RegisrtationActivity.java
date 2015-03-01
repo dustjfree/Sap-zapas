@@ -110,9 +110,11 @@ public class RegisrtationActivity extends ActionBarActivity{
 
 				if (success == 1) {
 					finish();
+				} else if(success == 2) {
+					proof = 2;
 				} else {
-					proof = 0;
-				}
+                    proof = 0;
+                }
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}
@@ -124,7 +126,9 @@ public class RegisrtationActivity extends ActionBarActivity{
 			if(proof == 0){
 
 				alertLogin.setVisibility(View.VISIBLE);
-			}
+			} else if (proof == 2){
+                alertSecretKey.setVisibility(View.VISIBLE);
+            }
             SharedPreferences.Editor ed = sharePrefs.edit();
             ed.putString("school_key", secretKey);
             ed.apply();
