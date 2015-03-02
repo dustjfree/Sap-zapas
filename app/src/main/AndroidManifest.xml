@@ -58,7 +58,7 @@
             android:label="@string/title_activity_messages" >
         </activity>
         <activity
-            android:name=".Historie_expand"
+            android:name=".History_expand"
             android:label="История">
         </activity>
     </application>

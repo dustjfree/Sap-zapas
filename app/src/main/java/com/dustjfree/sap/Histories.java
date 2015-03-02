@@ -13,36 +13,25 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.internal.transition.ActionBarTransition;
 import android.support.v7.widget.Toolbar;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.Display;
 import android.view.Gravity;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 
 public class Histories extends ActionBarActivity {
@@ -136,6 +125,10 @@ public class Histories extends ActionBarActivity {
 /*
 *COOOOMMMMMEEEEENT
  */
+
+        lv.setDivider(null);
+        lv.setDividerHeight(0);
+
         fabButton = new FloatingActionButton.Builder(this)
                 .withDrawable(getResources().getDrawable(R.drawable.fab_send_hist_white__24dp))
                 .withButtonColor(getResources().getColor(R.color.accent_color_400))
@@ -234,7 +227,7 @@ public class Histories extends ActionBarActivity {
 	}
 
     public void expand_historie_button(View v){
-        Intent intent = new Intent(Histories.this, Historie_expand.class);
+        Intent intent = new Intent(Histories.this, History_expand.class);
         startActivity(intent);
     }
 
