@@ -172,13 +172,8 @@ public class Histories extends ActionBarActivity {
                 }
             }
         });
-        lv.setOnItemClickListener( new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-        });
 	}
+
     boolean isSameRow(int firstVisibleItem) {
         return firstVisibleItem == mPreviousFirstVisibleItem;
     }
@@ -188,10 +183,10 @@ public class Histories extends ActionBarActivity {
         View topChild = lv.getChildAt(0);
         return topChild.getTop();
     }
+
     void setScrollThreshold(int scrollThreshold) {
         mScrollThreshold = scrollThreshold;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
@@ -290,6 +285,8 @@ public class Histories extends ActionBarActivity {
                 public View getView(final int pos, View convertView, ViewGroup parent){
                     View row = super.getView(pos, convertView,parent);
                     View commB = row.findViewById(R.id.commentButton);
+                    View expButton = row.findViewById(R.id.historie_expand_button);
+
                     commB.setOnClickListener(new OnClickListener() {
 
                         @Override
@@ -306,7 +303,22 @@ public class Histories extends ActionBarActivity {
                                 // TODO Auto-generated catch block
                                 e.printStackTrace();
                             }
-
+                        }
+                    });
+                    expButton.setOnClickListener(new OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            JSONObject c;
+                            try {
+                                c = histories.getJSONObject(pos);
+                                String history = c.getString(TAG_HIST);
+                                Intent intent = new Intent(Histories.this, History_expand.class);
+                                intent.putExtra("expandHistory", history);
+                                startActivity(intent);
+                            } catch (JSONException e) {
+                                // TODO Auto-generated catch block
+                                e.printStackTrace();
+                            }
                         }
                     });
 
