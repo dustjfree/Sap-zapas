@@ -39,6 +39,7 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -209,11 +210,13 @@ public class Histories extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     protected void onPostCreate(Bundle savedInstanceState){
         super.onPostCreate(savedInstanceState);
         toggle.syncState();
     }
+
     @Override
     public void onConfigurationChanged(Configuration newConfig){
         super.onConfigurationChanged(newConfig);
@@ -224,11 +227,16 @@ public class Histories extends ActionBarActivity {
 		Intent intent = new Intent(Histories.this,Settings.class);
 		startActivity(intent);
 	}
-	
-	public void SendHistonClick(View view){
+
+    public void SendHistonClick(View view){
 		Intent intent = new Intent(Histories.this, SendHist.class);
 		startActivity(intent);
 	}
+
+    public void expand_historie_button(View v){
+        Intent intent = new Intent(Histories.this, Historie_expand.class);
+        startActivity(intent);
+    }
 
     void onRefreshComplete(){
         //historiesAdapter.clear();
@@ -236,7 +244,7 @@ public class Histories extends ActionBarActivity {
         swipeRefreshLayout.setRefreshing(false);
     }
 
-	class LoadAllHistories extends AsyncTask<String, String, String>{
+    class LoadAllHistories extends AsyncTask<String, String, String>{
 		private ProgressDialog pDialog;
 	      @Override
 	        protected void onPreExecute() {

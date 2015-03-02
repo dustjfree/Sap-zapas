@@ -23,6 +23,20 @@
         <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-4a3dad72cfa7a4973033dacc39cda9761a646395.jar" />
     </item>
     <item
+        jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.balysv\material-ripple\1.0.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="aba9317bc403d69d8a571c0a72acfe95698a5db0">
+        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-bec533ebacce6622fc287ede77fbde16d8a71a0b.jar" />
+    </item>
+    <item
+        jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\info.hoang8f\fbutton\1.0.5\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c12397a785c3b1868fbebeffc9553457b27803f">
+        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-38cae60b46371f4e28a9e408fa44efd1996f69c5.jar" />
+    </item>
+    <item
         jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"

@@ -57,6 +57,10 @@
             android:name="com.dustjfree.sap.Messages"
             android:label="@string/title_activity_messages" >
         </activity>
+        <activity
+            android:name=".Historie_expand"
+            android:label="История">
+        </activity>
     </application>
     <receiver android:name="com.blackboard.androidtest.receiver.ConnectionChangeReceiver"
         android:label="NetworkConnection">
