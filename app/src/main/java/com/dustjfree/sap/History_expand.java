@@ -1,6 +1,7 @@
 package com.dustjfree.sap;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -8,7 +9,7 @@ import android.widget.TextView;
 /**
  * Created by free on 02.03.2015.
  */
-public class History_expand extends Histories {
+public class History_expand extends ActionBarActivity {
 
     Toolbar toolbar;
 
