@@ -19,7 +19,7 @@ public class History_expand extends Histories {
         String hist = getIntent().getStringExtra("expandHistory");
         TextView tv = (TextView)findViewById(R.id.historyTextExp);
         tv.setText(hist);
-        toolbar = (Toolbar)findViewById(R.id.historietoolbar);
+        toolbar = (Toolbar)findViewById(R.id.historytoolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

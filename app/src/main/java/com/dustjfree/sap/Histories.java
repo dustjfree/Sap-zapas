@@ -221,7 +221,7 @@ public class Histories extends ActionBarActivity {
 		startActivity(intent);
 	}
 
-    public void expand_historie_button(View v){
+    public void expand_history_button(View v){
         Intent intent = new Intent(Histories.this, History_expand.class);
         startActivity(intent);
     }

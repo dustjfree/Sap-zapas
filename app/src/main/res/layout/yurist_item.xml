@@ -5,12 +5,15 @@
     
         <ImageView
             android:id="@+id/imgYur"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="100dp"/>
 
         <TextView
             android:id="@+id/txtYur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgYur"/>
 
 </RelativeLayout>

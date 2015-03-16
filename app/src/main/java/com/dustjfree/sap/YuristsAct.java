@@ -26,7 +26,7 @@ public class YuristsAct extends ActionBarActivity {
 			    "Единый юридический центр"
 				} ;
 		Integer[] imageId = {
-			        R.drawable.edin_yur_centr
+			        R.drawable.yurcentr
 			  };
 		
 		YuristA sad = new YuristA(this, web, imageId);
