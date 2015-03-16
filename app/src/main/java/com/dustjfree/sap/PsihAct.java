@@ -14,6 +14,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
@@ -138,8 +140,10 @@ public class PsihAct extends ActionBarActivity {
         //asdasdasd
 			String[] from = {TAG_PSYCH_DATA};
 			int[] to = {R.id.txtPsih};
-			ListAdapter adapter = new SimpleAdapter(PsihAct.this, PsychList, R.layout.psihol_item, from,to);
-			lv.setAdapter(adapter);
+            Bitmap bitmap = BitmapFactory.decodeResource(PsihAct.this.getResources(),R.drawable.logo_psy_m);
+            PsihAdapter ad = new PsihAdapter(PsihAct.this,PsychList,bitmap);
+			//ListAdapter adapter = new SimpleAdapter(PsihAct.this, PsychList, R.layout.psihol_item, from,to);
+			lv.setAdapter(ad);
 			lv.setOnItemClickListener(new OnItemClickListener() {
 
 				@Override

@@ -1774,7 +1774,7 @@ containing a value of this type.
         public static final int like=0x7f02004d;
         public static final int linear_layout1=0x7f02004e;
         public static final int logo_=0x7f02004f;
-        public static final int logo_psy=0x7f020050;
+        public static final int logo_psy_m=0x7f020050;
         public static final int long_line=0x7f020051;
         public static final int menu_refresh_icon=0x7f020052;
         public static final int newslet_top_panel=0x7f020053;

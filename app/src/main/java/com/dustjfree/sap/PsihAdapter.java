@@ -30,11 +30,14 @@ public class PsihAdapter extends ArrayAdapter<HashMap<String,String>>{
 
     //asdasd
 	public View getView(int position, View view, ViewGroup parent) {
-	LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-	View rowView= inflater.inflate(R.layout.psihol_item, null, true);
-	TextView txtTitle = (TextView) rowView.findViewById(R.id.txtPsih);
-	ImageView imageView = (ImageView) rowView.findViewById(R.id.imgPsih);
-	imageView.setImageBitmap(image);
+        LayoutInflater inflater = ((Activity) context).getLayoutInflater();
+        View rowView= inflater.inflate(R.layout.psihol_item, null, true);
+        HashMap<String,String> map = new HashMap<>();
+        map = list.get(position);
+        TextView txtTitle = (TextView) rowView.findViewById(R.id.txtPsih);
+        txtTitle.setText(map.get("psych_name"));
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.imgPsih);
+        imageView.setImageBitmap(image);
 	return rowView;
 	}
 	}
