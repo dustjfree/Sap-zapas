@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class YuristsAct extends ActionBarActivity {
@@ -32,6 +33,14 @@ public class YuristsAct extends ActionBarActivity {
 		YuristA sad = new YuristA(this, web, imageId);
 		ListView lv = (ListView) findViewById(R.id.lvYur);
 		lv.setAdapter(sad);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(YuristsAct.this, Messages.class);
+                intent.putExtra("spec_id", "37");
+                startActivity(intent);
+            }
+        });
 	}
 
     @Override

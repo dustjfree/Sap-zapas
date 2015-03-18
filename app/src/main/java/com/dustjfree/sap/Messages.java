@@ -67,7 +67,7 @@ public class Messages extends ActionBarActivity{
 		toolbar = (Toolbar)findViewById(R.id.messageToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        idpsych = getIntent().getStringExtra("psych_id");
+        idpsych = getIntent().getStringExtra("spec_id");
 		mes_lv = (ListView)findViewById(R.id.messages_lv);
         mes_lv.setDivider(null);
         mes_lv.setDividerHeight(0);

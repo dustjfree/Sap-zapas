@@ -152,7 +152,7 @@ public class PsihAct extends ActionBarActivity {
 					// TODO Auto-generated method stub
 					Log.d("psychID", PsychList.get(arg2).get(TAG_PSYCH_ID).toString());
 					Intent intent = new Intent(PsihAct.this, Messages.class);
-					intent.putExtra("psych_id", PsychList.get(arg2).get(TAG_PSYCH_ID).toString());
+					intent.putExtra("spec_id", PsychList.get(arg2).get(TAG_PSYCH_ID).toString());
 					startActivity(intent);
 				}
 			});
