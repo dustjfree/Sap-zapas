@@ -9,6 +9,13 @@
         <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-4a3dad72cfa7a4973033dacc39cda9761a646395.jar" />
     </item>
     <item
+        jar="D:\Android\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-17dac5b91531950ca7bf81973a3db5c92b056e8e.jar" />
+    </item>
+    <item
         jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.balysv\material-ripple\1.0.1\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -16,11 +23,18 @@
         <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-bec533ebacce6622fc287ede77fbde16d8a71a0b.jar" />
     </item>
     <item
-        jar="D:\Android\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.rengwuxian.materialedittext\library\1.8.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-17dac5b91531950ca7bf81973a3db5c92b056e8e.jar" />
+        sha1="516ac6ca1d257cf5a1d95184b2ca21234f59c885">
+        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-b483d15841131eb4e63cacb0217d4b9c66376ae3.jar" />
+    </item>
+    <item
+        jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2e8c06a7aad26ba8d2d5cab8134556594fe36856">
+        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-44cd3ea3474bf68214a2e274e52a2a03b1586605.jar" />
     </item>
     <item
         jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\info.hoang8f\fbutton\1.0.5\classes.jar"
@@ -30,11 +44,11 @@
         <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-38cae60b46371f4e28a9e408fa44efd1996f69c5.jar" />
     </item>
     <item
-        jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\21.0.3\classes.jar"
+        jar="C:\Users\free\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2e8c06a7aad26ba8d2d5cab8134556594fe36856">
-        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\classes-44cd3ea3474bf68214a2e274e52a2a03b1586605.jar" />
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\Android\workspace\SAP\app\build\intermediates\pre-dexed\debug\library-2.4.0-05b7128cca06e68fbdeb681e4f0e78deeaf67afa.jar" />
     </item>
     <item
         jar="D:\Android\workspace\SAP\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"

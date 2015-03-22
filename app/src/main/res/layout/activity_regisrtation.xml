@@ -12,12 +12,14 @@
         android:background="@color/darker_color"
         theme="@style/ThemeOverlay.AppCompat.ActionBar">
     </android.support.v7.widget.Toolbar>
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:layout_below="@+id/RegToolbar">
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -30,8 +32,6 @@
         android:id="@+id/edit_reg_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:drawableBottom="@drawable/edit_text_line_new"
         android:ems="10"
         android:layout_below="@+id/textView1"
         android:layout_alignParentLeft="true"
@@ -53,8 +53,6 @@
         android:id="@+id/edit_reg_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:drawableBottom="@drawable/edit_text_line_new"
         android:ems="10"
         android:inputType="textPassword"
         android:layout_below="@+id/textView2"
@@ -75,8 +73,6 @@
         android:id="@+id/edit_reg_pass_re"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:drawableBottom="@drawable/edit_text_line_new"
         android:layout_below="@+id/textView"
         android:ems="10"
         android:inputType="textPassword"
@@ -96,11 +92,10 @@
         android:id="@+id/edit_reg_secret_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:drawableBottom="@drawable/edit_text_line_new"
         android:layout_below="@+id/textView5"
         android:ems="10"
         android:inputType="textPassword"/>
+
     <Button
         android:id="@+id/button1"
         android:layout_width="300dp"
@@ -159,5 +154,7 @@
         android:layout_alignBottom="@+id/edit_reg_secret_key"
         android:layout_toRightOf="@+id/edit_reg_secret_key"
         android:layout_toEndOf="@+id/edit_reg_secret_key" />
-</RelativeLayout>
+
+    </RelativeLayout>
+
 </RelativeLayout>

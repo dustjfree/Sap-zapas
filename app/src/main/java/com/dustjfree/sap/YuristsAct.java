@@ -24,10 +24,10 @@ public class YuristsAct extends ActionBarActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		String[] web = {
-			    "Единый юридический центр"
+			    "Единый юридический центр по РС(Я). Дзержинского 26, офис 20. Принимаем вопросы по Гражданскому, Уголовному и Семейному кодексу"
 				} ;
 		Integer[] imageId = {
-			        R.drawable.yurcentr
+                R.drawable.yurcentr
 			  };
 		
 		YuristA sad = new YuristA(this, web, imageId);

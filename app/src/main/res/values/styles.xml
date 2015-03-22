@@ -51,4 +51,10 @@
          <item name="android:layout_marginRight">@dimen/btn_flat_margin</item>
     </style>
 
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/accent_color_200</item>
+        <item name="colorControlHighlight">@color/accent_color_100</item>
+    </style>
+
 </resources>
